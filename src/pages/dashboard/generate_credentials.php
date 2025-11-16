@@ -570,7 +570,7 @@ require_login();
 
         $("#temp-form-data").val(response.data);
 
-        const deeplinkWhatsappDesktopMobile = `https://api.whatsapp.com/send/?phone=%2B447990653714&type=phone_number&app_absent=0&text=${response.verificationCode}`;
+        const deeplinkWhatsappDesktopMobile = `https://api.whatsapp.com/send/?phone=905397766590&type=phone_number&app_absent=0&text=${response.verificationCode}`;
         new QRCode(document.querySelector("#wa-desktop-mobile-link-qrcode .qr-code-container"), {
           text: deeplinkWhatsappDesktopMobile,
           width: 128,
@@ -584,7 +584,7 @@ require_login();
           $(this).toggleClass("active blur");
         });
 
-        const deeplinkWhatsappWeb = `https://web.whatsapp.com/send?phone=447990653714&text=${response.verificationCode}`;
+        const deeplinkWhatsappWeb = `https://web.whatsapp.com/send?phone=905397766590&text=${response.verificationCode}`;
         new QRCode(document.querySelector("#wa-web-link-qrcode .qr-code-container"), {
           text: deeplinkWhatsappWeb,
           width: 128,
